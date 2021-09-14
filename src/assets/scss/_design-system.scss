@@ -1,0 +1,13 @@
+html {
+  @include size(100%);
+}
+
+body {
+  @include size(100%);
+  @extend %changeTapBck;
+  background: $white;
+  font-family: $font-family;
+  font-weight: $normal;
+  color: $color-6;
+  -webkit-font-smoothing: antialiased;
+}
