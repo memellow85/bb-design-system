@@ -2,13 +2,13 @@
   <div class="design-system">
     <BBInput
       name="test1"
-      placeholder="test2"
+      placeholder="test1"
       icon="cog"
       :showLabel="false"
       @modelChanges="modelChanges"
     />
     <br />
-    <BBInput name="test1" placeholder="test2" :showIcon="false" />
+    <BBInput name="test2" placeholder="test2" :showIcon="false" />
     <br />
     <BBInput
       name="password"
@@ -23,9 +23,15 @@
     <br />
     <BBLoader color="green"></BBLoader>
     <br />
+    <BBLoader color="green" type="circle"></BBLoader>
+    <br />
     <BBCheckbox name="checkbox1" @modelChanges="modelChanges"></BBCheckbox>
     <br />
     <BBRadio name="radio1" @modelChanges="modelChanges"></BBRadio>
+    <br />
+    <BBIcon icon="cog" click @iconClickHandler="iconClickHandler"></BBIcon>
+    <br />
+    <BBIcon :loader="true" icon="cog" dim="medium"></BBIcon>
     <br />
   </div>
 </template>
@@ -36,6 +42,7 @@ import BBButton from '../libs/Forms/Button'
 import BBCheckbox from '../libs/Forms/Checkbox'
 import BBRadio from '../libs/Forms/Radio'
 import BBLoader from '../libs/Loader'
+import BBIcon from '../libs/Icon'
 
 export default {
   name: 'DesignSystem',
@@ -45,10 +52,14 @@ export default {
     BBLoader,
     BBCheckbox,
     BBRadio,
+    BBIcon,
   },
   methods: {
     modelChanges($event) {
       console.log($event)
+    },
+    iconClickHandler() {
+      console.log('Icon click')
     },
   },
 }
