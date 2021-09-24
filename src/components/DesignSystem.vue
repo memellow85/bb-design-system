@@ -33,6 +33,8 @@
     <br />
     <BBIcon :loader="true" icon="cog" dim="medium"></BBIcon>
     <br />
+    <BBTab :list="list" @changeHandler="changeHandler"></BBTab>
+    <br />
   </div>
 </template>
 
@@ -43,6 +45,7 @@ import BBCheckbox from '../libs/Forms/Checkbox'
 import BBRadio from '../libs/Forms/Radio'
 import BBLoader from '../libs/Loader'
 import BBIcon from '../libs/Icon'
+import BBTab from '../libs/Tab'
 
 export default {
   name: 'DesignSystem',
@@ -53,9 +56,37 @@ export default {
     BBCheckbox,
     BBRadio,
     BBIcon,
+    BBTab,
+  },
+  data() {
+    return {
+      list: [
+        {
+          id: '1',
+          name: 'Tab 1',
+          icon: 'cog',
+          selected: false,
+        },
+        {
+          id: '2',
+          name: 'Tab 2',
+          icon: 'cog',
+          selected: true,
+        },
+        {
+          id: '3',
+          name: 'Tab 3',
+          icon: 'cog',
+          selected: false,
+        },
+      ],
+    }
   },
   methods: {
     modelChanges($event) {
+      console.log($event)
+    },
+    changeHandler($event) {
       console.log($event)
     },
     iconClickHandler() {

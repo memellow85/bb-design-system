@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="[dim, color]"
+    :class="['bb-button', dim, color]"
     :disabled="disabled"
     @click="$emit('submitHandler')"
   >
