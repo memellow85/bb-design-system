@@ -20,6 +20,7 @@
     <BBButton name="Button 1"></BBButton>
     <BBButton name="Button 2" color="red"></BBButton>
     <BBButton name="Button 3" color="grey"></BBButton>
+    <BBButton name="Button 3" color="white"></BBButton>
     <br />
     <BBLoader color="green"></BBLoader>
     <br />

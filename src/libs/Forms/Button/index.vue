@@ -69,5 +69,14 @@ button {
   &.grey {
     background: $color-8;
   }
+  &.white {
+    box-sizing: border-box;
+    border-color: $color-8;
+    background: $white;
+    color: $color-8;
+    &:hover {
+      background: $color-1;
+    }
+  }
 }
 </style>
