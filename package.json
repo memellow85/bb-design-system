@@ -21,7 +21,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "rollup": "rollup -c ./rollup.config.js",
-    "generate": "npm publish",
+    "generate": "yarn publish",
     "update_package": "rm yarn.lock && yarn cache clean && yarn install"
   },
   "dependencies": {

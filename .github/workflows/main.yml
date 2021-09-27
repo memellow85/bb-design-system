@@ -21,9 +21,7 @@ jobs:
         run: yarn build
       - name: Rollup
         run: yarn rollup
-      - name: Generate
-        run: yarn generate
       - name: Publish
-        run: yarn publish
+        run: yarn generate
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
