@@ -34,11 +34,11 @@
 
 ## Release
 
-- 0.0.1 - Input, Radio, Checkbox, Loader, Field, Tab, Button, Icon
+- 0.1.0 - Input, Radio, Checkbox, Loader, Field, Tab, Button, Icon
 
 ## Next release
 
-- 0.0.2 - New components
+- 0.2.0 - New components
 
 ## License
 
