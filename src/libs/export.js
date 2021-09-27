@@ -1,0 +1,8 @@
+export { default as BBButton } from './Forms/Button/index.vue'
+export { default as BBInput } from './Forms/Input/index.vue'
+export { default as BBField } from './Forms/Field/index.vue'
+export { default as BBCheckbox } from './Forms/Checkbox/index.vue'
+export { default as BBRadio } from './Forms/Radio/index.vue'
+export { default as BBLoader } from './Loader/index.vue'
+export { default as BBIcon } from './Icon/index.vue'
+export { default as BBTab } from './Tab/index.vue'
